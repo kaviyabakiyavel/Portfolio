@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server ./frontend",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaviyabakiyavel/Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaviyabakiyavel/Portfolio/issues"
+  },
+  "homepage": "https://github.com/kaviyabakiyavel/Portfolio#readme",
+  "description": "",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
