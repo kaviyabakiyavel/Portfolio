@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.html",
   "scripts": {
-    "start": "live-server ./frontend",
+    "start": "live-server",
     "build": "webpack --mode production"
   },
   "repository": {
