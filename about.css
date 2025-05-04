@@ -1,0 +1,41 @@
+/*About page style*/
+.profile-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-text h1 {
+    margin-top: 0;
+}
+
+.about-text a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .profile-content {
+        flex-direction: column;
+        /* Stack items vertically on tablets/phones */
+        text-align: center;
+    }
+
+}

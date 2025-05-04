@@ -1,0 +1,32 @@
+/*skills*/
+.skills {
+    padding: 20px
+}
+
+.skills-category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px
+}
+
+.skills-icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+.skill-item p {
+    max-width: 80%;
+    text-align: justify;
+}
+
+.interview-link {
+    margin: 0px 100px
+}

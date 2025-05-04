@@ -1,4 +1,3 @@
-// loadNavbar.js
 document.addEventListener('DOMContentLoaded', function () {
     // Fetch the navbar.html and inject it into the page
     fetch('navbar.html')
