@@ -1,40 +1,53 @@
-/* nav bar style */
-.top-left-name {
-    position: absolute;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Arial', sans-serif;
-    color: #fff;
+body {
+    margin: 0;
+    padding: 0; /* Optional, removes default padding */
+    font-family: Arial, sans-serif; /* Optional, sets default font */
 }
+
 .navbar {
     background-color: #000;
-    padding: 20px;
-    width: 100%
+    padding: 10px 20px;
+    overflow-x: auto;      /* Enables scroll on small screens */
+    white-space: nowrap;   /* Prevents wrapping */
+    display: flex;
+    align-items: center;
+    gap: 20px;              /* Space between name and links */
 }
+
+.top-left-name {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
 .nav-links {
     list-style: none;
+    display: flex;
+    flex-direction: row;   /* Ensures horizontal layout */
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: space-evenly;
+    gap: 15px;
+    flex-shrink: 0;
 }
+
 .nav-links li {
-    margin: 0;
+    flex: 0 0 auto;         /* Prevent shrinking */
 }
+
 .nav-links a {
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
-    padding: 10px;
+    font-size: 16px;
+    padding: 8px 12px;
     transition: all 0.3s ease;
     border-radius: 4px;
+    display: inline-block;
+    white-space: nowrap;
 }
+
 .nav-links a:hover {
     background-color: #ff5733;
-    color: #fff;
     font-weight: bold;
-    transform: scale(1.1);
-}
-.about-text {
-    padding: 10px
+    transform: scale(1.05);
 }

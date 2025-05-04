@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Styled Navigation</title>
     <link rel="stylesheet" href="./skills.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const condition = false;  // Your condition to hide links
+            // Get all elements with the class "interview-link"
+            const interviewLinks = document.querySelectorAll(".interview-link");
+            // Loop through each interview link and apply the logic
+            if (!condition) {
+                interviewLinks.forEach(function (link) {
+                    link.style.display = "none";
+                });
+            }
+        });
+    </script>
 </head>
 
 <body>
@@ -24,7 +37,7 @@
                         advancements over its predecessor, HTML4, by introducing new elements, attributes, APIs, and
                         features that enhance modern web development.</p>
                 </div>
-                <div class="interview-link">
+                <div class="interview-link" id="interviewLink">
                     <a href="Skills/html5-interview.html" target="_blank">HTML5 Interview</a>
                 </div>
                 <div class="skill-item">
@@ -38,7 +51,7 @@
                         create responsive, animated, and professional-looking websites efficiently
                     </p>
                 </div>
-                <div class="interview-link"><a href="Skills/css3-interview.html" target="_blank">CSS Interview</a></div>
+                <div class="interview-link" id="interviewLink"><a href="Skills/css3-interview.html" target="_blank">CSS Interview</a></div>
                 <div class="skill-item">
                     <img class="skills-icon" src="Photos/JS.png" alt="JavaScript Logo" title="JavaScript">
                     <p>
@@ -50,7 +63,7 @@
                         images, and much more.
                     </p>
                 </div>
-                <div class="interview-link"><a href="Skills/javascript-interview.html" target="_blank">JavaScript
+                <div class="interview-link" id="interviewLink"><a href="Skills/javascript-interview.html" target="_blank">JavaScript
                         Interview</a></div>
                 <div class="skill-item">
                     <img class="skills-icon" src="Photos/ReactJs.png" alt="ReactJS Logo" title="ReactJS">
@@ -63,7 +76,7 @@
                         web applications.
                     </p>
                 </div>
-                <div class="interview-link"><a href="">ReactJs Interview</a></div>
+                <div class="interview-link" id="interviewLink"><a href="">ReactJs Interview</a></div>
                 <div class="skill-item">
                     <img class="skills-icon" src="Photos/Redux.png" alt="Redux Logo" title="Redux">
                     <p>
@@ -81,19 +94,19 @@
                         process more maintainable and efficient.
                     </p>
                 </div>
-                <div class="interview-link"><a href="">Redux Interview</a></div>
+                <div class="interview-link" id="interviewLink"><a href="">Redux Interview</a></div>
             </div>
         </div>
         <div class="skills-category">
             <h4>Back-End:</h4>
             <div>
-                <div class="skill-item">
+                <div class="skill-item" id="interviewLink">
                     <img class="skills-icon" src="Photos/NodeJs.png" alt="Node.js Logo" title="Node.js">
                     <p>Node.js is an open-source, cross-platform JavaScript runtime environment that allows you to run
                         JavaScript code outside of a web browser. It uses the V8 JavaScript engine developed by Google
                         for Chrome, enabling developers to build server-side applications using JavaScript.</p>
                 </div>
-                <div class="interview-link"><a href="">NodeJs Interview</a></div>
+                <div class="interview-link" id="interviewLink"><a href="">NodeJs Interview</a></div>
                 <div class="skill-item">
                     <img class="skills-icon" src="Photos/ExpressJs.png" alt="ExpressJs Logo" title="ExpressJs">
                     <p>Express.js is a lightweight and flexible backend web framework for Node.js, designed to simplify
@@ -102,7 +115,7 @@
                         allowing developers to create robust and scalable server-side applications with minimal effort.
                     </p>
                 </div>
-                <div class="interview-link"><a href="">ExpressJs Interview</a></div>
+                <div class="interview-link" id="interviewLink"><a href="">ExpressJs Interview</a></div>
                 <div class="skill-item">
                     <img class="skills-icon" src="Photos/RestAPI.png" alt="RestAPI Logo" title="RESTful APIs">
                     <p>A REST API (Representational State Transfer Application Programming Interface) is a set of rules
@@ -110,7 +123,7 @@
                         allow different applications to communicate with each other over the web, typically using HTTP
                         as the protocol.</p>
                 </div>
-                <div class="interview-link"><a href="">RestAPI Interview</a></div>
+                <div class="interview-link" id="interviewLink"><a href="">RestAPI Interview</a></div>
                 <div class="skill-item">
                     <img class="skills-icon" src="Photos/GraphQL.png" alt="GraphQL Logo" title="GraphQL">
                     <p>GraphQL is a query language for APIs and a runtime for executing those queries by using a type
@@ -118,7 +131,7 @@
                         different resources, GraphQL gives clients the flexibility to request exactly the data they need
                         in a single query.</p>
                 </div>
-                <div class="interview-link"><a href="">GraphQL Interview</a></div>
+                <div class="interview-link" id="interviewLink"><a href="">GraphQL Interview</a></div>
             </div>
         </div>
         <div class="skills-category">
@@ -130,7 +143,7 @@
                         to store, organize, and retrieve data in web and server-based applications. It is based on the
                         Structured Query Language (SQL) and is known for its speed, reliability, and ease of use.</p>
                 </div>
-                <div class="interview-link"><a href="">MySQL</a></div>
+                <div class="interview-link" id="interviewLink"><a href="">MySQL</a></div>
                 <div class="skill-item">
                     <img class="skills-icon" src="Photos/MongoDb.png" alt="MongoDb Logo" title="MongoDb">
                     <p>MySQL is ideal for projects that require a reliable, scalable, and cost-effective solution for
@@ -138,7 +151,7 @@
                         application, MySQL offers the flexibility and features needed for efficient data management.
                     </p>
                 </div>
-                <div class="interview-link"><a href="">MongoDb Interview</a></div>
+                <div class="interview-link" id="interviewLink"><a href="">MongoDb Interview</a></div>
             </div>
         </div>
         <div class="skills-category">
@@ -153,7 +166,7 @@
                         making it one of the most commonly used testing tools in modern JavaScript development.
                     </p>
                 </div>
-                <div class="interview-link"><a href="">Jest Interview</a></div>
+                <div class="interview-link" id="interviewLink"><a href="">Jest Interview</a></div>
 
                 <div class="skill-item">
                     <img class="skills-icon" src="Photos/Git.png" alt="Git Logo" title="Git">
@@ -164,7 +177,7 @@
                         codebases.
                     </p>
                 </div>
-                <div class="interview-link"><a href="">GIT Interview</a></div>
+                <div class="interview-link" id="interviewLink"><a href="">GIT Interview</a></div>
 
                 <div class="skill-item">
                     <img class="skills-icon" src="Photos/Agile.jpg" alt="Agile Development Practices Logo"
@@ -176,7 +189,7 @@
                         improve efficiency in the development process.
                     </p>
                 </div>
-                <div class="interview-link"><a href="">Agile Interview</a></div>
+                <div class="interview-link" id="interviewLink"><a href="">Agile Interview</a></div>
 
             </div>
         </div>
