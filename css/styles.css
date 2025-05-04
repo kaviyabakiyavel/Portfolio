@@ -40,10 +40,7 @@ body {
       flex-direction: column;  /* Stack items vertically on tablets/phones */
       text-align: center;
     }
-  
-    .about-text {
-      text-align: center;
-    }
+
   }
 
   
